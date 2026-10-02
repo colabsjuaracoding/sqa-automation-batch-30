@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteLatihanTestNG" verbose="1">
+    <test name="TestDasar">
+        <classes>
+            <class name="id.co.juaracoding.testng.KalkulatorTest"/>
+            <class name="id.co.juaracoding.testng.PrioritasTest"/>
+            <class name="id.co.juaracoding.testng.DataProviderTest"/>
+            <class name="id.co.juaracoding.testng.SiklusHidupTest"/>
+        </classes>
+    </test>
+
+</suite>
