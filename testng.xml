@@ -8,5 +8,21 @@
             <class name="id.co.juaracoding.testng.SiklusHidupTest"/>
         </classes>
     </test>
+    <test name="TestSelenium">
+        <classes>
+            <class name="id.co.juaracoding.selenium.LoginApiTest"/>
+            <class name="id.co.juaracoding.selenium.RegisterApiTest"/>            
+        </classes>
+    </test>
+
+    <test name="TestRestAssured">
+        <classes>
+            <class name="id.co.juaracoding.restassured.LoginApiTest"/>
+            <class name="id.co.juaracoding.restassured.ForgotPasswordApiTest"/>
+            <class name="id.co.juaracoding.restassured.RegisterApiTest"/>
+            <class name="id.co.juaracoding.restassured.DataMasterApiTest"/>
+        </classes>
+    </test>
+
 
 </suite>

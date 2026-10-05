@@ -12,10 +12,26 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testng.version>7.10.2</testng.version>
-        <selenium.version>4.27.0</selenium.version>         
+        <selenium.version>4.27.0</selenium.version>     
+        <restassured.version>5.5.0</restassured.version>    
     </properties>
 
     <dependencies>
+    <!-- Source: https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+    <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1.1</version>
+        <scope>compile</scope>
+    </dependency>
+
+        <dependency>                                          
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${restassured.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
