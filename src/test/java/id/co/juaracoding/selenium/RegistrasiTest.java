@@ -39,11 +39,12 @@ public class RegistrasiTest extends BaseSeleniumTest {
                 registerPage.submit();
 
                 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.urlContains("/check-email"));
-                Thread.sleep(5000);
-                registerPage.clickMagicLink();
-                Assert.assertTrue(driver.getCurrentUrl().contains("/dashboard"),
+                Assert.assertTrue(driver.getCurrentUrl().contains("/check-email"),
                                 "Registrasi sukses harus mengarahkan ke /check-email. URL aktual: "
                                                 + driver.getCurrentUrl());
+                
+                registerPage.clickMagicLink();
+                new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.urlContains("/activate"));
         }
 
         @Test(priority = 5)
@@ -52,7 +53,6 @@ public class RegistrasiTest extends BaseSeleniumTest {
                 LoginPage loginPage = new LoginPage(driver);
                 loginPage.loginAs(username, password);
 
-                Thread.sleep(5000);
                 new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.urlContains("/dashboard"));
 
                 Assert.assertTrue(driver.getCurrentUrl().contains("/dashboard"),
@@ -60,7 +60,7 @@ public class RegistrasiTest extends BaseSeleniumTest {
                                                 + driver.getCurrentUrl());
 
                 DashboardPage dashboardPage = new DashboardPage(driver);
-                Assert.assertTrue(dashboardPage.getLoggedInUserName().contains("Admin Satu"),
+                Assert.assertTrue(dashboardPage.getLoggedInUserName().contains("Selenium Uji Coba"),
                                 "Nama user yang login harus tampil di navbar");
         }
 
