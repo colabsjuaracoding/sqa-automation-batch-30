@@ -11,3 +11,4 @@ Semua aturan dan instruksi detail tersimpan di folder `.agents/rules/`. Berikut 
 | 3 | [keywords.md](.agents/rules/keywords.md) | Aturan untuk keyword khusus seperti COMMIT DAN PUSH dan penulisan di keyword.md |
 | 4 | [ai-instruction-Selenium.md](.agents/rules/ai-instruction-Selenium.md) | Aturan pertemuan ke-2: scope Selenium, larangan, konvensi penamaan, aturan teknis, dan format jawaban |
 | 5 | [pertemuan-3-restassured.md](.agents/rules/pertemuan-3-restassured.md) | Aturan pertemuan ke-3: scope RestAssured, larangan, konvensi penamaan, aturan teknis, dan format jawaban |
+| 6 | [pertemuan-5-cucumber.md](.agents/rules/pertemuan-5-cucumber.md) | Aturan pertemuan ke-5: scope Cucumber BDD, larangan, konvensi penamaan, aturan teknis, dan format jawaban |

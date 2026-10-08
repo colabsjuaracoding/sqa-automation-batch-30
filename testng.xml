@@ -24,5 +24,17 @@
         </classes>
     </test>
 
+    <test name="TestCucumberWeb">
+        <classes>
+            <class name="id.co.juaracoding.cucumber.web.CucumberWebRunner"/>
+        </classes>
+    </test>
+    
+    <test name="TestCucumberApi">
+        <classes>
+            <class name="id.co.juaracoding.cucumber.api.CucumberApiRunner"/>
+        </classes>
+    </test>
+
 
 </suite>
