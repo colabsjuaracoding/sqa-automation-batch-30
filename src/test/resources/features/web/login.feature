@@ -1,3 +1,4 @@
+# mvn -B test -Dtest=CucumberWebRunner "-Dsurefire.suiteXmlFiles="
 Feature: Login Web
   Sebagai user Simple Apps, saya ingin login lewat halaman Web supaya saya bisa masuk ke Dashboard.
   Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bentuk Gherkin.
@@ -16,6 +17,7 @@ Feature: Login Web
     When saya login sebagai "<username>" dengan password "<password>"
     Then toast error harus muncul di halaman login
     And browser tetap berada di halaman login
+# DATA DRIVEN
 
     Examples:
       | username | password                |
