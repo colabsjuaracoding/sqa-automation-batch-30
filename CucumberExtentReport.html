@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 9, 2026 10:18:16 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 9, 2026 10:29:03 PM</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Login Web</p>
             <p class="text-sm">
-              <span>10:18:20 PM</span> / <span>00:00:27:901</span>
+              <span>10:29:04 PM</span> / <span>00:00:24:299</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login Web</h5>
-<span class='badge badge-success'>10.09.2026 10:18:20 PM</span>
-<span class='badge badge-danger'>10.09.2026 10:18:48 PM</span>
-<span class='badge badge-default'>00:00:27:901</span>
+<span class='badge badge-success'>10.09.2026 10:29:04 PM</span>
+<span class='badge badge-danger'>10.09.2026 10:29:28 PM</span>
+<span class='badge badge-default'>00:00:24:299</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -122,10 +122,13 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login berhasil dengan akun Admin</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login berhasil dengan akun Admin</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="id.co.juaracoding.cucumber.web.WebSteps.aplikasiSudahMenyalaDiHalamanLogin()">
                 <span>Given aplikasi Simple Apps sudah menyala di halaman login</span>
@@ -137,13 +140,37 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="id.co.juaracoding.cucumber.web.WebSteps.browserHarusPindahKeHalamanDashboard()">
+              <div class="step fail-bg" title="id.co.juaracoding.cucumber.web.WebSteps.browserHarusPindahKeHalamanDashboard()">
                 <span>Then browser harus pindah ke halaman dashboard</span>
       <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at id.co.juaracoding.cucumber.web.WebSteps.browserHarusPindahKeHalamanDashboard(WebSteps.java:90)
+	at ✽.browser harus pindah ke halaman dashboard(file:///C:/SQA/Batch30/sqa-automation/src/test/resources/features/web/login.feature:12)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="id.co.juaracoding.cucumber.web.WebSteps.namaUserYangLoginMengandung(java.lang.String)">
+              <div class="step skip-bg" title="id.co.juaracoding.cucumber.web.WebSteps.namaUserYangLoginMengandung(java.lang.String)">
                 <span>And nama user yang login mengandung "Admin Satu"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>id.co.juaracoding.cucumber.web.WebSteps.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>Screenshot on failure
+          <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+  
+    
+
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -153,23 +180,17 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>Login gagal karena kredensial salah</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Login gagal karena kredensial salah</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Login gagal karena kredensial salah</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
+                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Login gagal karena kredensial salah</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>Given aplikasi Simple Apps sudah menyala di halaman login</span>
       <div>
@@ -185,32 +206,8 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
-                    <span>And browser tetap berada di halaman login</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at id.co.juaracoding.cucumber.web.WebSteps.browserTetapBeradaDiHalamanLogin(WebSteps.java:106)
-	at ✽.browser tetap berada di halaman login(file:///C:/SQA/Batch30/sqa-automation/src/test/resources/features/web/login.feature:19)
-</textarea>
-      
-      </div>
-                  </div>
                   <div class="step pass-bg">
-                    <span>id.co.juaracoding.cucumber.web.WebSteps.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Screenshot on failure
-          <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
-  
-    
-
-    </div></div>
-</div>
+                    <span>And browser tetap berada di halaman login</span>
       <div>
       </div>
                   </div>
@@ -219,13 +216,10 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>Login gagal karena kredensial salah</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Login gagal karena kredensial salah</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
+              <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
                     <span>Given aplikasi Simple Apps sudah menyala di halaman login</span>
       <div>
@@ -241,32 +235,8 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
       <div>
       </div>
                   </div>
-                  <div class="step fail-bg">
-                    <span>And browser tetap berada di halaman login</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at id.co.juaracoding.cucumber.web.WebSteps.browserTetapBeradaDiHalamanLogin(WebSteps.java:106)
-	at ✽.browser tetap berada di halaman login(file:///C:/SQA/Batch30/sqa-automation/src/test/resources/features/web/login.feature:19)
-</textarea>
-      
-      </div>
-                  </div>
                   <div class="step pass-bg">
-                    <span>id.co.juaracoding.cucumber.web.WebSteps.afterScenario(io.cucumber.java.Scenario)</span>
-      <div>Screenshot on failure
-          <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
-  
-    
-
-    </div></div>
-</div>
+                    <span>And browser tetap berada di halaman login</span>
       <div>
       </div>
                   </div>
@@ -297,15 +267,15 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">java.lang.AssertionError</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -318,21 +288,11 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:18:39 PM</td>
+<td>22:29:12 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>And browser tetap berada di halaman login</a>
+<a href="#" class="linked" test-id='1' id='6'>Then browser harus pindah ke halaman dashboard</a>
 <div class="">
-<span class="badge badge-default">Login Web.Login gagal karena kredensial salah.And browser tetap berada di halaman login</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:18:47 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='22'>And browser tetap berada di halaman login</a>
-<div class="">
-<span class="badge badge-default">Login Web.Login gagal karena kredensial salah.And browser tetap berada di halaman login</span>
+<span class="badge badge-default">Login Web.Login berhasil dengan akun Admin.Then browser harus pindah ke halaman dashboard</span>
 </div>
 </td>
 </tr>
@@ -359,7 +319,7 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>2</span>
 </span>
 <p class="name">@negatif</p>
 <p class="duration text-sm">2 tests</p>
@@ -367,7 +327,7 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <div class="test-contents d-none">
 <div class="info">
 <h4>@negatif</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -378,9 +338,9 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:18:31 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:13 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='10'>Login gagal karena kredensial salah</a>
 <div class="">
@@ -388,9 +348,9 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>22:18:40 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:21 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='17'>Login gagal karena kredensial salah</a>
 <div class="">
@@ -405,7 +365,7 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@smoke</p>
 <p class="duration text-sm">1 tests</p>
@@ -413,7 +373,7 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <div class="test-contents d-none">
 <div class="info">
 <h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -424,9 +384,9 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>22:18:20 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>22:29:04 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Login berhasil dengan akun Admin</a>
 <div class="">
@@ -451,13 +411,13 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 9, 2026 10:18:16 PM</h3>
+<h3>Oct 9, 2026 10:29:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 9, 2026 10:18:48 PM</h3>
+<h3>Oct 9, 2026 10:29:29 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -508,9 +468,9 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='66%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='66%'><b>2</b> scenarios failed,
+<small data-tooltip='33%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -528,10 +488,10 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='85%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='84%'><b>11</b> steps passed</small></div>
 <div>
-<small data-tooltip='14%'><b>2</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='7%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -547,7 +507,7 @@ Membungkus id.co.juaracoding.selenium.LoginTest (pertemuan 2, Unit 3) dalam bent
 </div></div>
 <script>
 var timeline = {
-"Login Web":27.901
+"Login Web":24.299
 };
 </script>
 <div class="row">
@@ -558,19 +518,19 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@negatif</td>
-<td>0</td>
 <td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@smoke</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -586,16 +546,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 2,
+passChild: 2,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
-failGrandChild: 2,
+passGrandChild: 11,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
